@@ -17,7 +17,7 @@ pipeline {
  
         stage('Deploy') {
             steps {
-                sh 'docker run -d -p 80:5000 --name node-app --network new-network node-app:latest'
+                sh 'docker run -d -p 80:5000 --name node-app --network new-network node-app'
                 
             }
         }
